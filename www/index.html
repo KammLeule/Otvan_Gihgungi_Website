@@ -1,6 +1,6 @@
 {{> head}}
         <main>
-            {{#section top_parts multiple=true}}
+            <div>{{#section top_parts multiple=true}}
                 
                 <a  href="{{_permalink}}">
                     {{top_part_blue type=image}}
@@ -9,7 +9,8 @@
                 </a>
 
             {{/section}}
-
+            </div>
+            <div>
             {{#section bottom multiple=true}}
 
             <a  href="{{_permalink}}">
@@ -19,7 +20,8 @@
             </a>
 
             {{/section}}
-
+            </div>
+            <div>
             {{#section belt multiple=true}}
 
                 <a  href="{{_permalink}}">
@@ -29,4 +31,6 @@
                 </a>
 
             {{/section}}
+            </div>
+        </main>
 {{> footer}}
