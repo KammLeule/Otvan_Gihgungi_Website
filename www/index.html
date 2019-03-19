@@ -1,40 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Otvan Gihgungi</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <header>
-            <h1> Otvan Gihgungi nhghghftest test</h1>
-        </header>
+{{> head}}
         <main>
-            <div>
-                <img src="images/top_part_blue.jpg">
-                <img src="images/top_part_red.jpg">
-                <img src="images/top_part_green.jpg">
-            </div>
-            <div>
-                <img src="images/botomm_part_blue.jpg">
-                <img src="images/botomm_part_red.jpg">
-                <img src="images/botomm_part_green.jpg">
-            </div>
-            <div>
-                <img src="images/belt_blue.jpg">
-                <img src="images/belt_red.jpg">
-                <img src="images/belt_green.jpg">
-            </div>
-        </main>
-        <div>
-            <a href="belts.html"> belts</a>
-            bottom part
-            top part
-            Acrylic Samples
-        </div>
-        <div>
-            impressum
-            contact
-        </div>
-<!-- Kommentar -->
-    </body>
-</html>
+            {{#section top_parts multiple=true}}
+                
+                <a  href="{{_permalink}}">
+                    {{top_part_blue type=image}}
+                    {{top_part_green type=image}}
+                    {{top_part_red type=image}}
+                </a>
+
+            {{/section}}
+
+            {{#section botomm_parts multiple=true}}
+
+                <a  href="{{_permalink}}">
+                    {{botomm_part_blue type=image}}
+                    {{botomm_part_green type=image}}
+                    {{botomm_part_red type=image}}
+                </a>
+
+            {{/section}}
+{{> footer}}
