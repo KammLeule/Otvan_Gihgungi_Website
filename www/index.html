@@ -1,36 +1,7 @@
 {{> head}}
         <main>
-            <div>{{#section top_parts multiple=true}}
-                
-                <a  href="{{_permalink}}">
-                    {{top_part_blue type=image}}
-                    {{top_part_green type=image}}
-                    {{top_part_red type=image}}
-                </a>
-
-            {{/section}}
-            </div>
-            <div>
-            {{#section bottom multiple=true}}
-
-            <a  href="{{_permalink}}">
-                {{bottom_part_blue type=image}}
-                {{bottom_part_green type=image}}
-                {{bottom_part_red type=image}}
-            </a>
-
-            {{/section}}
-            </div>
-            <div>
-            {{#section belt multiple=true}}
-
-                <a  href="{{_permalink}}">
-                    {{belt_blue type=image}}
-                    {{belt_green type=image}}
-                    {{belt_red type=image}}
-                </a>
-
-            {{/section}}
-            </div>
+            {{> menu}}
+            {{> 3parts}}
+                   
         </main>
 {{> footer}}

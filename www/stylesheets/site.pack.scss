@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+//@import url('https://fonts.googleapis.com/css?family=Yantramanav');
 
 *, *:before, *:after {
   margin: 0;
@@ -8,36 +8,114 @@
 
 html {
   font-family: 'Yantramanav';
-  font-weight: bold; // 400 Regular 500 Semibold 600 Bold
+  font-weight: 400; // 400 Regular 500 Semibold 600 Bold
   font-size: 16pt;
   box-sizing: border-box;
 }
-header h1 {
-  font-size: 2em;
+
+header {
+  //display: flex;
+  // justify-content: space-between; für abstand zwischen objecten
+  // list-style: none; liste ohne Punkte
+  margin-top: 15px;
+
+  h1 {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  font-size: 1.8em;
   //font-family: 'Lilita+One' , sans-serif;
   font-weight: bold;
-//em größenordnung abhängig von der vordefinierten Schriftgröße im html bereich 
+  //em größenordnung abhängig von der vordefinierten Schriftgröße im html bereich 
+  }
 
 }
+
 img {
-  width: 31%;
-  margin: 2%;
-}
-.body-right {
-  text-align: left;
-}
+  width: 32.6;
+  margin: 0 8px 8px 0;
+} 
 
 main{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position: relative;
+
+  .content-parts {
+    
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img{
+        display: flex;
+        width: 15%;
+
+      
+      } 
+    margin-left: 20%;
+  }
+
+  .content-startpage {
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  ul {
+    left: 20px;
+    position: absolute;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 4px;
+
+    li {
+      //display: flex;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background-color: rgb(228, 228, 228);
+      //align-content: right;
+      border-bottom: 1px solid #555;
+
+      
+      a {
+        display: block;
+        color: #000;
+        padding: 1em 20px;
+      }
+      
+      a:hover {
+        background-color: #555;
+        color: white;
+        border-radius: 6px;
+      }
+  
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+  }
 
 }
 
-main div a {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-1 ul li:first-child {
+  background: #4CAF50;
+}
+
+.active-2 ul li:nth-child(2) {
+  background: #4CAF50;
+}
+
+.active-3 ul li:nth-child(3) {
+  background: #4CAF50;
+}
+
+.active-4 ul li:nth-child(4) {
+  background: #4CAF50;
 }

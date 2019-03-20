@@ -1,7 +1,12 @@
 {{> head}}
-        {{#section belt}}
-        <h1>{{title}}</h1>
-        {{cover type=image}}
-        {{beschreibung type=html}}
-        {{/section}}
+        <main class="active-3">
+        {{> menu}}
+        <div class="content-parts">
+                {{#section belt}}
+                <h1>{{title}}</h1>
+                {{cover type=image}}
+                {{beschreibung type=html}}
+                {{/section}}
+        </div>
+        </main>
 {{> footer}}
