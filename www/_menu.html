@@ -1,8 +1,26 @@
 {{#section menu multiple=true}}
             <ul>
-                <li><a  href="http://localhost:3000/top_parts/top-parts-8"> top parts</a></li>
-                <li><a  href="http://localhost:3000/bottom/bottom-parts-14"> bottom parts</a></li>
-                <li><a  href="http://localhost:3000/belt/belts-12"> belts</a></li>
+                <li>
+                        {{#section top_parts multiple=true}}
+                            <a  href="{{_permalink}}">
+                                top parts
+                            </a>
+                        {{/section}}
+                </li>
+                <li>
+                        {{#section bottom multiple=true}}
+                            <a  href="{{_permalink}}">
+                                bottom parts
+                            </a>
+                        {{/section}}
+                </li>
+                <li>
+                        {{#section belt multiple=true}}
+                            <a  href="{{_permalink}}">
+                                top parts
+                            </a>
+                        {{/section}}
+                </li> 
                 <li><a  href="/contact/index.html"> contact</a></li>
             </ul>
 {{/section}}
