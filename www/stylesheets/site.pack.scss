@@ -26,7 +26,12 @@ header {
   font-size: 1.8em;
   //font-family: 'Lilita+One' , sans-serif;
   font-weight: bold;
-  //em größenordnung abhängig von der vordefinierten Schriftgröße im html bereich 
+  //em größenordnung abhängig von der vordefinierten Schriftgröße im html bereich  a:hover {
+    a:hover {
+        color: rgb(11, 156, 19);
+        border-radius: 6px;
+    }
+
   }
 
 }
