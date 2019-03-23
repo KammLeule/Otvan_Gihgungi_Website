@@ -1,12 +1,14 @@
 {{> head}}
         <main class="active-2">
-        {{> menu}}
-        <div class="content-parts">
-                {{#section bottom}}
-                <h1>{{title}}</h1>
-                {{cover type=image}}
-                {{beschreibung type=html}}
+                {{> menu}}
+                {{#section bottom multiple=true}}
+                        <div class="content-parts">
+        
+                                <h3>{{title}}</h3>
+                                {{cover type=image}}
+                                {{beschreibung type=html}}
+                        
+                        </div>                
                 {{/section}}
-        </div>
         </main>
 {{> footer}}

@@ -1,13 +1,18 @@
 {{> head}}
         <main class="active-1">
-        {{> menu}} 
-        <div class="content-parts">
-        {{#section top_parts}}
-        <h1>{{title}}</h1>
-        {{cover type=image}}
-        {{beschreibung type=html}}
-        {{/section}}
+                {{> menu}}
+                {{#section top_parts_info multiple=true}}
+                        <div class="content-parts">
         
-        </div>
+                                <h3>{{title}}</h3>
+                                <div>
+                                {{info_pic_top_parts_1 type=image}}
+                                {{info_pic_top_parts_2 type=image}}
+                                {{info_pic_top_parts_3 type=image}}
+                                </div>
+                                {{beschreibung type=html}}
+                        
+                        </div>
+                {{/section}}
         </main>
 {{> footer}}
